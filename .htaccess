@@ -1,0 +1,6 @@
+#Liste des erreurs couranttes
+ErrorDocument 404 /pages/error-404.html
+ErrorDocument 403 /pages/error-403.html
+
+Options -Indexes
+

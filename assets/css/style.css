@@ -155,6 +155,11 @@ input {
     font-family: 'Montserrat', sans-serif;
 }
 
+
+.mobile {
+    display: none;
+}
+
 h1,
 h2,
 h3,
@@ -213,6 +218,39 @@ h2.small-heading::before {
     width: 23%;
     left: 38%;
 }
+
+h3.small-heading {
+    padding: 60px 0 10px 0;
+    font-size: 2.25em;
+    margin-bottom: 60px;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+h3.small-heading::after {
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 35px;
+    content: "\f107";
+    left: 48%;
+    bottom: -28px;
+    color: #073a63;
+    background-color: #ffffff;
+    padding: 0px 8px;
+}
+
+h3.small-heading::before {
+    position: absolute;
+    bottom: -10px;
+    content: "";
+    height: 2px;
+    background-color: #073a63;
+    display: block;
+    width: 23%;
+    left: 38%;
+}
+
 
 h3 {
     font-size: 2.25em;
@@ -1330,37 +1368,122 @@ input#cfsubmit:hover {
 ===============================================*/
 
 @media (max-width: 1056px) and (min-width: 992px) {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+
     .main-heading p {
         font-size: 45px;
     }
+    .intro-content span {
+        font-size: 1em;
+        padding-left:0;
+        margin-top: 13px;
+    }
+    .tel-responsive {
+        display: block;
+    }
+
+    .heading p {
+        font-size: 32px;
+    }
+
+    .mobile-center {
+        text-align: center;
+    }
+
+    .team-member-box p {
+        font-size: 0.8em;
+    }
+
+    .team-member-text {
+        font-size: 1.55em;
+    }
+    .back p {
+        font-size: 12.4px;
+    }
+
+
+
+
+
+    
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
+
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+
     .intro-content h1 {
         padding-left: 30px;
     }
 
     .intro-content span {
-        font-size: 100px;
+        font-size: 0.8em;
+        padding-left:0;
+        margin-top: 13px;
     }
 
     .intro-content span.number {
         font-size: 12em;
     }
 
+
     .intro-content .slogan-text {
-        padding-left: 21px;
-        margin-top: 22px;
+        padding-left: 0px;
+        font-size: 0.6em;
     }
 
     .main-heading p {
         font-size: 35px;
     }
+    .tel-responsive {
+        display: block;
+    }
+
+    .heading p {
+        font-size: 22px;
+    }
+
+    .mobile-center {
+        text-align: center;
+    }
+
+
+
+
+
+
 }
 
 @media (max-width: 767px) {
+
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
     h2 {
         font-size: 2.375em;
+    }
+
+    h2.small-heading {
+        font-size: 1.55em;
+    }
+    h3.small-heading {
+        font-size: 1.55em;
     }
     .introduction {
         text-align: center;
@@ -1377,10 +1500,10 @@ input#cfsubmit:hover {
     }
     .intro-content h1 {
         margin-bottom: 12px;
-        padding-left: 0px;
+        padding-left: 0;
     }
     .intro-content span {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .intro-content span.number {
@@ -1388,19 +1511,28 @@ input#cfsubmit:hover {
     }
 
     .intro-content .slogan-text {
-        margin-top: 4px;
-        font-size: 0.8em;
+        font-size: 0.7em;
+        margin-top: 12px;
     }
 
     .social-media {
         margin-top: 20px;
         font-size: 0.8em;
     }
+
+    .heading p {
+        font-size: 21.6px;
+    }
+
     .menu > div h2 {
         font-size: 1.1em;
     }
     .close-btn {
         background: url(../img/close_sm.png);
+    }
+
+    .price-box .pricing-catagory-name {
+        font-size: 1.6em;
     }
 
     .footer .copyright {
@@ -1409,6 +1541,10 @@ input#cfsubmit:hover {
         margin-bottom: 10px;
     }
 
+    .footer .mentions {
+        float: none;
+        text-align: center;
+    }
     .footer .author {
         float: none;
         text-align: center;
@@ -1419,7 +1555,7 @@ input#cfsubmit:hover {
 
 /******* Modification   *****/
 .linkPub {
-    /*margin-left: 25px;*/
+    display: block;
     color: #935B25;
 }
 
@@ -1483,6 +1619,6 @@ h1.small-heading::before {
 
 }
 
-.container-transparen {
-    background-color: transparent;
+.intervention p{
+    color: #935B25;
 }

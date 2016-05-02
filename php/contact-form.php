@@ -58,7 +58,7 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'stephds01@gmail.com';  // please change this email id
+	$to = 'manuel-desa@desa-charpente.fr';  // please change this email id
 	$subject = 'Demande de renseignement';
 	
 	$body = "From: $name\n Prenom: $lastname\n Telephone: $phone\n E-Mail: $email\n Message:\n $message";

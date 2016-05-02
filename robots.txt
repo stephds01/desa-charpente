@@ -6,4 +6,5 @@ Disallow: assets/img/*.ico$
 Disallow: assets/js/*.js$
 Disallow: assets/fonts/
 Disallow: php/*.php$
+noindex: robots.txt
 Allow: /
